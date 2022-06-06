@@ -8,16 +8,20 @@ function compare () {
     let str1 = (text1.value);
     let str2 = (text2.value);
 
+    let leng1 = Number(str1.length)
+    let leng2 = Number(str2.length)
+    console.log(leng1, leng2)
 
-    if (str1 > str2){
+
+    if (leng1 > leng2){
         console.log('Maior') 
         document.querySelector('#result').innerHTML = "Maior"
       } 
-      else if (str1 < str2){
+      else if (leng1 < leng2){
         console.log('Menor');
         document.querySelector('#result').innerHTML = "Menor"
       } 
-      else if (str1 === str2){
+      else if (leng1 === leng2){
         console.log('Igual');
         document.querySelector('#result').innerHTML = "Igual"
       }
